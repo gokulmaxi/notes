@@ -15,6 +15,7 @@
 \usepackage{pdfpages}
 \usepackage{transparent}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \pdfsuppresswarningpagegroup=1
 \graphicspath{{./img/}}
 
@@ -56,5 +57,14 @@
     \item add protective meassures in everything(what can go wrong can go wrong)
     \item abstarct as much as hardware as possible
     \item test as many times as possible 1 2
+\end{itemize}
+\section{RMF based multi robot traffic management}
+\textbf{Robot middleware framework}
+\begin{itemize}
+        \item To navigate to floors and other rooms - need of communication between doors and elevators
+        \item \textbf{free\_fleet} - freefleet client is opensource robot fleet management system \url{https://github.com/open-rmf/rmf_demos}
+        \item \textbf{Google or-tool}- tool for solving graphs \url{https://developers.google.com/optimization/routing}
+        \item creates a detour path when deadlock arises
+        \item clobot - korea based startup working multi robot system \url{https://github.com/CLOBOT-Co-Ltd/clober}
 \end{itemize}
 \end{document}
