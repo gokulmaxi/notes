@@ -13,8 +13,9 @@ for file in $files; do
         echo $file
         make4ht $CURRENT_DIR/$file -d $CURRENT_DIR/docs/$output_dir
     fi
+
 done
 cd $CURRENT_DIR
 rm -rf $CURRENT_DIR/docs/tmp
-tree -H './build' -L 1 --noreport --charset utf-8 -o docs/index.html
+tree -H './build' -L 6 --noreport --charset utf-8 -o docs/index.html -P '*.html'
 
