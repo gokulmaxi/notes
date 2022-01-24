@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<html xml:lang='nl' lang='nl'> 
+<head><title></title> 
+<meta charset='iso-8859-1' /> 
+<meta name='generator' content='TeX4ht (http://www.tug.org/tex4ht/)' /> 
+<meta name='viewport' content='width=device-width,initial-scale=1' /> 
+<link rel='stylesheet' type='text/css' href='l9-multirobotpath.css' /> 
+<meta name='src' content='l9-multirobotpath.tex' /> 
+</head><body>
+   <h3 class='sectionHead'><span class='titlemark'>1   </span> <a id='x1-10001'></a>Overview</h3>
+     <ul class='itemize1'>
+     <li class='itemize'>taxanomy
+     </li>
+     <li class='itemize'>MR path planning
+         <ul class='itemize2'>
+         <li class='itemize'>Discrete
+         </li>
+         <li class='itemize'>continous</li></ul>
+     </li>
+     <li class='itemize'>Concurrent assignment and path planning</li></ul>
+<!-- l. 32 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead'><span class='titlemark'>2   </span> <a id='x1-20002'></a>Taxanomy</h3>
+     <ul class='itemize1'>
+     <li class='itemize'>Domain : continous and Discrete
+         <ul class='itemize2'>
+         <li class='itemize'>continous planning time parameterised trajecteroies
+         </li>
+         <li class='itemize'>planning on graphs or grids</li></ul>
+     </li>
+     <li class='itemize'>Goal assignment
+         <ul class='itemize2'>
+         <li class='itemize'><span class='ecbx-1000'>Labeled </span>each robot has pre determined goal
+         </li>
+         <li class='itemize'><span class='ecbx-1000'>Inlabeled </span>no pre determined path but goal must be reached</li></ul>
+     </li>
+     <li class='itemize'>problem representation
+         <ul class='itemize2'>
+         <li class='itemize'><span class='ecbx-1000'>coupled </span>joint state of all robots in the system
+         </li>
+         <li class='itemize'><span class='ecbx-1000'>Decoupled </span>each robot is represented individually</li></ul>
+     </li>
+     <li class='itemize'>planning
+                                                                  
+
+                                                                  
+         <ul class='itemize2'>
+         <li class='itemize'><span class='ecbx-1000'>Reactive </span>dynamic obstacle avoidance
+         </li>
+         <li class='itemize'><span class='ecbx-1000'>Deliberative </span>optimilaty</li></ul>
+     </li>
+     <li class='itemize'>Computation
+         <ul class='itemize2'>
+         <li class='itemize'><span class='ecbx-1000'>Centralised</span>
+         </li>
+         <li class='itemize'><span class='ecbx-1000'>Decentralised</span></li></ul>
+     </li></ul>
+<!-- l. 60 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead'><span class='titlemark'>3   </span> <a id='x1-30003'></a>Multi agent path planning</h3>
+     <ul class='itemize1'>
+     <li class='itemize'>Multi agent path planning is also called as multi agent path planning
+     </li>
+     <li class='itemize'>discretized robot
+     </li>
+     <li class='itemize'>point robots - holonomic and no motion constrains</li></ul>
+<!-- l. 66 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead'><span class='titlemark'>3.1   </span> <a id='x1-40003.1'></a>The problem</h4>
+     <ul class='itemize1'>
+     <li class='itemize'>no of agents at start location with predefined goal in known environment
+     </li>
+     <li class='itemize'><span class='ecbx-1000'>Task </span>find a collsion free path
+         <ul class='itemize2'>
+         <li class='itemize'>generally this is an Labeled problem
+         </li>
+         <li class='itemize'><span class='ecbx-1000'>application </span>logistics,automated warehouse</li></ul>
+     </li>
+     <li class='itemize'><span class='ecbx-1000'>allowed motion </span>- north,south,east,west</li></ul>
+                                                                  
+
+                                                                  
+<!-- l. 76 --><p class='noindent'>
+</p>
+   <h5 class='subsubsectionHead'><span class='titlemark'>3.1.1   </span> <a id='x1-50003.1.1'></a>Performance metrics</h5>
+     <ul class='itemize1'>
+     <li class='itemize'><span class='ecbx-1000'>Makespan </span>- time of last robots arrival
+     </li>
+     <li class='itemize'><span class='ecbx-1000'>Flowtime </span>- sum of arrival time, over all robots</li></ul>
+<!-- l. 81 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead'><span class='titlemark'>4   </span> <a id='x1-60004'></a>Coupled vs decoupled</h3>
+   <figure class='figure'> 
+
+                                                                  
+
+                                                                  
+<a id='x1-6001r1'></a>
+                                                                  
+
+                                                                  
+<!-- l. 84 --><p class='noindent'><img src='cvdpathplanning.png' height='276' alt='PIC' width='276' />
+</p>
+<figcaption class='caption'><span class='id'>Figuur 1:</span><span class='content'></span></figcaption><!-- tex4ht:label?: x1-6001r1  -->
+                                                                  
+
+                                                                  
+   </figure>
+     <ul class='itemize1'>
+     <li class='itemize'>coupled planning gives completeness
+     </li>
+     <li class='itemize'>Decoupled path planning is not complete in general(prone to Deadlock)</li></ul>
+   <h3 class='sectionHead'><span class='titlemark'>5   </span> <a id='x1-70005'></a>Coupled path planning</h3>
+     <ul class='itemize1'>
+     <li class='itemize'>Complexity over decoupled
+     </li>
+     <li class='itemize'>but more power solution
+     </li>
+     <li class='itemize'>coupled formulation:
+         <ul class='itemize2'>
+         <li class='itemize'>Robot <span class='cmmi-10'>i </span>has configuration space <span class='footnote-mark'><a href='l9-multirobotpath2.html#fn1x0'><sup class='textsuperscript'>1</sup></a></span><a id='x1-7001f1'></a> 
+         of <span class='cmmi-10'>C</span><sub><span class='cmmi-7'>i</span></sub>
+         </li>
+         <li class='itemize'>Then joint state is given by product:<br class='newline' /><span class='cmmi-10'>X </span><span class='cmr-10'>= </span><span class='cmmi-10'>C</span><sub><span class='cmr-7'>1</span></sub> <span class='cmsy-10'>* </span><span class='cmmi-10'>C</span><sub><span class='cmr-7'>2</span></sub> <span class='cmsy-10'>* </span><span class='cmmi-10'>C</span><sub><span class='cmr-7'>3</span></sub> <span class='cmsy-10'>* </span><span class='cmmi-10'>C</span><sub><span class='cmr-7'>4</span></sub><span class='cmmi-10'>……</span>
+         </li>
+         <li class='itemize'>dimensionality grows linearly
+         </li>
+         <li class='itemize'>A* requires time that is exponential to space</li></ul>
+     </li>
+     <li class='itemize'>for <span class='cmmi-10'>N </span>robots in <span class='cmmi-10'>M </span>cells in grid world <figure class='figure'> 
+<a id='x1-7002r2'></a> <img src='mrcoupledspace.png' height='276' alt='PIC' width='276' />
+<figcaption class='caption'><span class='id'>Figuur 2:</span><span class='content'></span></figcaption><!-- tex4ht:label?: x1-7002r2  -->
+     </figure>
+     </li>
+     <li class='itemize'>we have <span class='cmmi-10'>M</span><sup><span class='cmmi-7'>N</span></sup> states to consider
+     </li>
+     <li class='itemize'>Facts
+         <ul class='itemize2'>
+         <li class='itemize'>NP hard <span class='footnote-mark'><a href='l9-multirobotpath3.html#fn2x0'><sup class='textsuperscript'>2</sup></a></span><a id='x1-7003f2'></a> 
+         to solve optimally for make span and flow time minimisation
+         </li>
+         <li class='itemize'>impossible to minimize both objective</li></ul>
+     </li></ul>
+    
+</body> 
+</html>

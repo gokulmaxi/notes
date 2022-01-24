@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html xml:lang='nl' lang='nl'> 
+<head><title></title> 
+<meta charset='iso-8859-1' /> 
+<meta content='TeX4ht (http://www.tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link type='text/css' href='notes.css' rel='stylesheet' /> 
+<meta content='notes.tex' name='src' /> 
+</head><body>
+   <h3 class='sectionHead'><span class='titlemark'>1   </span> <a id='x1-10001'></a>trial and tribulations of rolling out a robotic fleet</h3>
+     <ul class='itemize1'>
+     <li class='itemize'>Hardware expensive and time taking
+     </li>
+     <li class='itemize'>work with manufacturer
+     </li>
+     <li class='itemize'>outdoor robotics is difficult
+     </li>
+     <li class='itemize'>Dont reinvent wheel (Plan for wxisting solution)
+     </li>
+     <li class='itemize'>Focus on goal
+     </li>
+     <li class='itemize'>waterproofing sensor
+     </li>
+     <li class='itemize'>heat genereate moisture in camera
+     </li>
+     <li class='itemize'>field testing (moving out things and lockdown)
+     </li>
+     <li class='itemize'>remote testing (much more effictive)
+     </li>
+     <li class='itemize'>always have a plan in field testing
+     </li>
+     <li class='itemize'>pre prep the hardwares(baterry compiled code )
+     </li>
+     <li class='itemize'>Record every thing
+     </li>
+     <li class='itemize'><span class='ecbx-1000'>Plotjuggler </span>- important tool for graph visulasation
+     </li>
+     <li class='itemize'>make nodes anonymous (Shutdown nodes is a pain)</li></ul>
+                                                                  
+
+                                                                  
+<!-- l. 40 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead'><span class='titlemark'>1.1   </span> <a id='x1-20001.1'></a>Principles</h4>
+     <ul class='itemize1'>
+     <li class='itemize'>Use standard ros messages
+     </li>
+     <li class='itemize'>use params and cfg liberally (mainly for cpp codes)
+     </li>
+     <li class='itemize'>make simulation more real(messages and other stuff not gfx)
+     </li>
+     <li class='itemize'>use standard tools</li></ul>
+<figure class='figure'> 
+<a id='x1-20011'></a> <img src='platform_abstraction.png' width='172' height='172' alt='PIC' />
+<figcaption class='caption'><span class='id'>Figuur 1:</span><span class='content'></span></figcaption><!-- tex4ht:label?: x1-20011  -->
+   </figure>
+<!-- l. 53 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead'><span class='titlemark'>1.2   </span> <a id='x1-30001.2'></a>conclusion</h4>
+     <ul class='itemize1'>
+     <li class='itemize'>hardware is hard
+     </li>
+     <li class='itemize'>remote testing is valuable
+     </li>
+     <li class='itemize'>add protective meassures in everything(what can go wrong can go wrong)
+     </li>
+     <li class='itemize'>abstarct as much as hardware as possible
+     </li>
+     <li class='itemize'>test as many times as possible 1 2</li></ul>
+<!-- l. 61 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead'><span class='titlemark'>2   </span> <a id='x1-40002'></a>RMF based multi robot traffic management</h3>
+<!-- l. 62 --><p class='noindent'><span class='ecbx-1000'>Robot middleware framework</span> </p>
+     <ul class='itemize1'>
+     <li class='itemize'>To navigate to floors and other rooms - need of communication between
+     doors and elevators
+                                                                  
+
+                                                                  
+     </li>
+     <li class='itemize'><span class='ecbx-1000'>free_fleet </span>- freefleet client is opensource robot fleet management system
+     <a href='https://github.com/open-rmf/rmf_demos' class='url'><span class='ectt-1000'>https://github.com/open-rmf/rmf_demos</span></a>
+     </li>
+     <li class='itemize'><span class='ecbx-1000'>Google         or-tool</span>-         tool         for         solving         graphs
+     <a href='https://developers.google.com/optimization/routing' class='url'><span class='ectt-1000'>https://developers.google.com/optimization/routing</span></a>
+     </li>
+     <li class='itemize'>creates a detour path when deadlock arises
+     </li>
+     <li class='itemize'>clobot    -    korea    based    startup    working    multi    robot    system
+     <a href='https://github.com/CLOBOT-Co-Ltd/clober' class='url'><span class='ectt-1000'>https://github.com/CLOBOT-Co-Ltd/clober</span></a></li></ul>
+    
+</body> 
+</html>

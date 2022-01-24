@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang='nl' xml:lang='nl'> 
+<head><title></title> 
+<meta charset='iso-8859-1' /> 
+<meta name='generator' content='TeX4ht (http://www.tug.org/tex4ht/)' /> 
+<meta name='viewport' content='width=device-width,initial-scale=1' /> 
+<link rel='stylesheet' type='text/css' href='notes.css' /> 
+<meta name='src' content='notes.tex' /> 
+</head><body>
+   <h3 class='sectionHead'><span class='titlemark'>1   </span> <a id='x1-10001'></a>Path planning</h3>
+     <ul class='itemize1'>
+     <li class='itemize'>Computing a route from starting point to a goal point
+     </li>
+     <li class='itemize'>assumptions
+         <ul class='itemize2'>
+         <li class='itemize'>where   you   are   and   where   u   need   to   go   and   map   of
+         environment(perception)
+         </li>
+         <li class='itemize'>behaviour of robot for command (math model)
+         </li>
+         <li class='itemize'>obstacles and open space where robot can move</li></ul>
+     </li>
+     <li class='itemize'>Find the set of commands required to move the robot to the desired position -
+     path planning</li></ul>
+<!-- l. 33 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead'><span class='titlemark'>2   </span> <a id='x1-20002'></a>Real time</h3>
+     <ul class='itemize1'>
+     <li class='itemize'>something the happens without or negligible delay
+     </li>
+     <li class='itemize'>in robotics,procces with 10 hz or higher is considered as realtime</li></ul>
+<!-- l. 38 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead'><span class='titlemark'>3   </span> <a id='x1-30003'></a>Map representation</h3>
+     <ul class='itemize1'>
+     <li class='itemize'>simplest map is a matrix of 0s and 1s
+     </li>
+     <li class='itemize'>continous map - represented as mathematical function (X&gt;0 or X&lt;5,Y&gt;0
+     or Y6)</li></ul>
+                                                                  
+
+                                                                  
+<!-- l. 43 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead'><span class='titlemark'>4   </span> <a id='x1-40004'></a>path representation</h3>
+     <ul class='itemize1'>
+     <li class='itemize'>series of interminent co-ordinates
+     </li>
+     <li class='itemize'>entire vector field which gives a direction and magnitude
+         <ul class='itemize2'>
+         <li class='itemize'><span class='ecbx-1000'>vector  field </span>is  a  function  where  you  give  x  and  y  and  it  gives
+         direction and magnitude to move in</li></ul>
+     </li></ul>
+<!-- l. 51 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead'><span class='titlemark'>5   </span> <a id='x1-50005'></a>list of algorithms</h3>
+     <ul class='itemize1'>
+     <li class='itemize'>Artificial potential fields
+     </li>
+     <li class='itemize'>Breadth first search
+     </li>
+     <li class='itemize'>A*
+     </li>
+     <li class='itemize'>RRT and RRT*</li></ul>
+<!-- l. 58 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead'><span class='titlemark'>5.1   </span> <a id='x1-60005.1'></a>Aritificial potential field</h4>
+     <ul class='itemize1'>
+     <li class='itemize'><span class='cmmi-10'>U</span><span class='cmr-10'>(</span><span class='cmmi-10'>x,y</span><span class='cmr-10'>) =
+     </span><span class='cmmi-10'>distance</span>_<span class='cmmi-10'>from</span>_<span class='cmmi-10'>goal</span><span class='cmr-10'>(</span><span class='cmmi-10'>x,y</span><span class='cmr-10'>) + </span><span class='cmex-10'>∑
+  </span><span class='cmr-10'>1</span><span class='cmmi-10'>∕distance</span>_<span class='cmmi-10'>from</span>_<span class='cmmi-10'>ith</span>_<span class='cmmi-10'>obstacle</span><span class='cmr-10'>(</span><span class='cmmi-10'>x,y</span><span class='cmr-10'>) </span><figure class='figure'> 
+<a id='x1-60011'></a> <img height='276' alt='PIC' src='field_vector_graph.png' width='276' />
+<figcaption class='caption'><span class='id'>Figuur 1:</span><span class='content'></span></figcaption><!-- tex4ht:label?: x1-60011  -->
+     </figure>
+     </li>
+     <li class='itemize'>Find the gradient and move along negative direction</li></ul>
+    
+</body> 
+</html>
