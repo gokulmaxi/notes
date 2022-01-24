@@ -17,5 +17,6 @@ for file in $files; do
 done
 cd $CURRENT_DIR
 rm -rf $CURRENT_DIR/docs/tmp
-tree -H './build' -L 6 --noreport --charset utf-8 -o docs/index.html -P '*.html'
+cd docs
+tree -H '.' -L 6 --noreport --charset utf-8 -o index.html -P '*.html'
 
