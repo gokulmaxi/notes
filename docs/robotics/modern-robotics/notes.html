@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html lang='nl' xml:lang='nl'> 
+<html xml:lang='nl' lang='nl'> 
 <head><title></title> 
 <meta charset='iso-8859-1' /> 
 <meta name='generator' content='TeX4ht (http://www.tug.org/tex4ht/)' /> 
@@ -7,11 +7,30 @@
 <link rel='stylesheet' type='text/css' href='notes.css' /> 
 <meta name='src' content='notes.tex' /> 
 </head><body>
-   <h3 class='sectionHead'><span class='titlemark'>1   </span> <a id='x1-10001'></a>Foundation of mobile robotics ch-2</h3>
-<!-- l. 23 --><p class='noindent'>
+   <h3 class='sectionHead'><span class='titlemark'>1   </span> <a id='x1-10001'></a>Intro - lightboard</h3>
+<!-- l. 23 --><p class='noindent'>Everything follows right hand rule </p><figure class='figure'> 
+
+                                                                  
+
+                                                                  
+<a id='x1-1001r1'></a>
+                                                                  
+
+                                                                  
+<!-- l. 26 --><p class='noindent'><img src='postiveRotaion.png' height='172' alt='PIC' width='172' />
 </p>
-   <h4 class='subsectionHead'><span class='titlemark'>1.1   </span> <a id='x1-20001.1'></a>Degrees of freedom rigid body</h4>
+<figcaption class='caption'><span class='id'>Figuur 1:</span><span class='content'></span></figcaption><!-- tex4ht:label?: x1-1001r1  -->
+                                                                  
+
+                                                                  
+   </figure>
+   <h3 class='sectionHead'><span class='titlemark'>2   </span> <a id='x1-20002'></a>Foundation of mobile robotics ch-2</h3>
+<!-- l. 31 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead'><span class='titlemark'>2.1   </span> <a id='x1-30002.1'></a>Degrees of freedom rigid body</h4>
      <ul class='itemize1'>
+     <li class='itemize'><span class='ecbx-1000'>Configuration </span>- A specific position of the position of all points of robot
+     </li>
      <li class='itemize'><span class='ecbx-1000'>C-space </span>- The space of all configuration
      </li>
      <li class='itemize'><span class='ecbx-1000'>degrees of freedom </span>- dimension of c space
@@ -19,14 +38,179 @@
      <li class='itemize'>Rigid body has 6 degrees of freedom
      </li>
      <li class='itemize'>dof - <span class='cmex-10'>∑
-  </span><span class='cmr-10'>(</span><span class='cmmi-10'>freedompoints</span><span class='cmr-10'>) </span><span class='cmsy-10'>- </span><span class='cmmi-10'>no.of.constrains</span>
+  </span><span class='cmr-10'>(</span><span class='cmmi-10'>freedompoints</span><span class='cmr-10'>) </span><span class='cmsy-10'>- </span><span class='cmmi-10'>no.of.constrains </span><br class='newline' /> <!-- tex4ht:inline --><div class='tabular'> <table id='TBL-1' class='tabular'><colgroup id='TBL-1-1g'><col id='TBL-1-1' /></colgroup><colgroup id='TBL-1-2g'><col id='TBL-1-2' /></colgroup><colgroup id='TBL-1-3g'><col id='TBL-1-3' /></colgroup><colgroup id='TBL-1-4g'><col id='TBL-1-4' /></colgroup><tr class='hline'><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr id='TBL-1-1-' style='vertical-align:baseline;'><td style='white-space:nowrap; text-align:center;' id='TBL-1-1-1' class='td11'> points </td><td style='white-space:nowrap; text-align:center;' id='TBL-1-1-2' class='td11'>dof</td><td style='white-space:nowrap; text-align:center;' id='TBL-1-1-3' class='td11'>no.of.constrains</td><td style='white-space:nowrap; text-align:center;' id='TBL-1-1-4' class='td11'>constrans</td>
+</tr><tr class='hline'><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr id='TBL-1-2-' style='vertical-align:baseline;'><td style='white-space:nowrap; text-align:center;' id='TBL-1-2-1' class='td11'>point A</td><td style='white-space:nowrap; text-align:center;' id='TBL-1-2-2' class='td11'> 2 </td><td style='white-space:nowrap; text-align:center;' id='TBL-1-2-3' class='td11'>      0         </td><td style='white-space:nowrap; text-align:center;' id='TBL-1-2-4' class='td11'>    -      </td>
+</tr><tr id='TBL-1-3-' style='vertical-align:baseline;'><td style='white-space:nowrap; text-align:center;' id='TBL-1-3-1' class='td11'>point B</td><td style='white-space:nowrap; text-align:center;' id='TBL-1-3-2' class='td11'> 2 </td><td style='white-space:nowrap; text-align:center;' id='TBL-1-3-3' class='td11'>      1         </td><td style='white-space:nowrap; text-align:center;' id='TBL-1-3-4' class='td11'>   <span class='cmmi-10'>d</span><sub><span class='cmmi-7'>ab</span></sub>    </td>
+</tr><tr id='TBL-1-4-' style='vertical-align:baseline;'><td style='white-space:nowrap; text-align:center;' id='TBL-1-4-1' class='td11'>Point C</td><td style='white-space:nowrap; text-align:center;' id='TBL-1-4-2' class='td11'> 2 </td><td style='white-space:nowrap; text-align:center;' id='TBL-1-4-3' class='td11'>      2         </td><td style='white-space:nowrap; text-align:center;' id='TBL-1-4-4' class='td11'> <span class='cmmi-10'>d</span><sub><span class='cmmi-7'>ac</span></sub><span class='cmmi-10'>,d</span><sub><span class='cmmi-7'>b</span></sub><span class='cmmi-10'>c</span> </td>
+</tr><tr class='hline'><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr></table>
+     </div>
      </li>
      <li class='itemize'><span class='cmmi-10'>dof </span><span class='cmr-10'>= </span><span class='cmmi-10'>m</span><span class='cmr-10'>(</span><span class='cmmi-10'>N </span><span class='cmsy-10'>- </span><span class='cmr-10'>1) </span><span class='cmsy-10'>-</span><span class='cmex-10'>∑</span>
-  <sub><span class='cmmi-7'>i</span><span class='cmr-7'>=1</span></sub><sup><span class='cmmi-7'>J</span></sup><span class='cmmi-10'>c</span><sub><span class='cmmi-7'>i</span></sub> <figure class='figure'> 
-<a id='x1-20011'></a> <img width='276' src='joints.png' height='276' alt='PIC' />
-<figcaption class='caption'><span class='id'>Figuur 1:</span><span class='content'></span></figcaption><!-- tex4ht:label?: x1-20011  -->
+  <sub><span class='cmmi-7'>i</span><span class='cmr-7'>=1</span></sub><sup><span class='cmmi-7'>J</span></sup><span class='cmmi-10'>c</span><sub><span class='cmmi-7'>i</span></sub>
+     </li>
+     <li class='itemize'>also <span class='cmmi-10'>c</span><sub><span class='cmmi-7'>i</span></sub> <span class='cmr-10'>+ </span><span class='cmmi-10'>f</span><sub><span class='cmmi-7'>i</span></sub> <span class='cmr-10'>= </span><span class='cmmi-10'>m</span></li></ul>
+<!-- l. 51 --><p class='noindent'>
+</p>
+   <h5 class='subsubsectionHead'><span class='titlemark'>2.1.1   </span> <a id='x1-40002.1.1'></a>Grublers formula</h5>
+     <ul class='itemize1'>
+     <li class='itemize'>N = no of links
+     </li>
+     <li class='itemize'>J = no of joints
+     </li>
+     <li class='itemize'>m = dof of rigid body (3 for planar 6 for spatial)
+     </li>
+     <li class='itemize'><span class='cmmi-10'>f</span><sub><span class='cmmi-7'>i</span></sub> = No of freedom of joint
+                                                                  
+
+                                                                  
+     </li>
+     <li class='itemize'><span class='cmmi-10'>c</span><sub><span class='cmmi-7'>i</span></sub> = No of constrains by joint
+     </li>
+     <li class='itemize'>
+     <table class='align-star'>
+             <tr><td class='align-odd'><span class='cmmi-10'>Dof</span></td>           <td class='align-even'> <span class='cmr-10'>= </span><span class='cmmi-10'>m</span><span class='cmr-10'>(</span><span class='cmmi-10'>N </span><span class='cmsy-10'>- </span><span class='cmr-10'>1) </span><span class='cmsy-10'>-</span><span class='cmex-10'>∑</span>
+  <sub><span class='cmmi-7'>i</span><span class='cmr-7'>=1</span></sub><sup><span class='cmmi-7'>j</span></sup><span class='cmmi-10'>c</span><sub>
+<span class='cmmi-7'>i</span></sub></td>                   <td class='align-odd'></td>                                     <td class='align-even'></td>             <td class='align-label'></td>             <td class='align-label'>
+             </td></tr><tr><td class='align-odd'></td>                   <td class='align-even'> <span class='cmr-10'>= </span><span class='cmmi-10'>m</span><span class='cmr-10'>(</span><span class='cmmi-10'>N </span><span class='cmsy-10'>- </span><span class='cmr-10'>1)</span><span class='cmex-10'>∑</span>
+  <sub><span class='cmmi-7'>i</span><span class='cmr-7'>=1</span></sub><sup><span class='cmmi-7'>j</span></sup><span class='cmmi-10'>m </span><span class='cmsy-10'>- </span><span class='cmmi-10'>f</span><sub>
+<span class='cmmi-7'>i</span></sub></td>                <td class='align-odd'> <span class='msam-10'>∵ </span><span class='cmmi-10'>m </span><span class='cmr-10'>= </span><span class='cmmi-10'>f</span><sub><span class='cmmi-7'>i</span></sub> <span class='cmr-10'>+ </span><span class='cmmi-10'>c</span><sub><span class='cmmi-7'>i</span></sub></td>                 <td class='align-even'></td>             <td class='align-label'></td>             <td class='align-label'></td>             <td class='align-label'>
+             </td></tr><tr><td class='align-odd'></td>                   <td class='align-even'> <span class='cmr-10'>= </span><span class='cmmi-10'>m</span><span class='cmr-10'>(</span><span class='cmmi-10'>N </span><span class='cmsy-10'>- </span><span class='cmr-10'>1) </span><span class='cmsy-10'>- </span><span class='cmmi-10'>J.m</span><span class='cmex-10'>∑</span>
+  <sub><span class='cmmi-7'>i</span><span class='cmr-7'>=1</span></sub><sup><span class='cmmi-7'>j</span></sup><span class='cmmi-10'>f</span><sub>
+<span class='cmmi-7'>i</span></sub></td>             <td class='align-odd'> <span class='msam-10'>∵</span><span class='cmex-10'>∑</span>
+  <sub><span class='cmmi-7'>i</span><span class='cmr-7'>=0</span></sub><sup><span class='cmmi-7'>j</span></sup><span class='cmmi-10'>c </span><span class='cmr-10'>= </span><span class='cmmi-10'>J.c</span></td>           <td class='align-even'></td>           <td class='align-label'></td>           <td class='align-label'></td>           <td class='align-label'>
+           </td></tr><tr><td class='align-odd'></td>                <td class='align-even'> <span class='cmr-10'>= </span><span class='cmmi-10'>m</span><span class='cmr-10'>(</span><span class='cmmi-10'>N </span><span class='cmsy-10'>- </span><span class='cmr-10'>1 </span><span class='cmsy-10'>- </span><span class='cmmi-10'>J</span><span class='cmr-10'>) + </span><span class='cmex-10'>∑</span>
+  <sub><span class='cmmi-7'>i</span><span class='cmr-7'>=1</span></sub><sup><span class='cmmi-7'>j</span></sup><span class='cmmi-10'>f</span><sub>
+<span class='cmmi-7'>i</span></sub></td>             <td class='align-odd'></td>                                     <td class='align-even'></td>             <td class='align-label'></td>             <td class='align-label'>             </td></tr></table>
+     </li>
+     <li class='itemize'>Grubler formula is valid only for joints with independant constrain
+     </li>
+     <li class='itemize'>Closed chain mechanism - both base and end point is connected to
+     ground <figure class='figure'> 
+<a id='x1-4001r2'></a> <img src='closedchain.png' height='276' alt='PIC' width='276' />
+<figcaption class='caption'><span class='id'>Figuur 2:</span><span class='content'></span></figcaption><!-- tex4ht:label?: x1-4001r2  -->
+     </figure>
+     </li>
+     <li class='itemize'>Open chain mechanism only base is attached to ground <figure class='figure'> 
+<a id='x1-4002r3'></a> <img src='openchain.png' height='276' alt='PIC' width='276' />
+<figcaption class='caption'><span class='id'>Figuur 3:</span><span class='content'></span></figcaption><!-- tex4ht:label?: x1-4002r3  -->
      </figure>
      </li></ul>
+                                                                  
+
+                                                                  
+<!-- l. 80 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead'><span class='titlemark'>2.2   </span> <a id='x1-50002.2'></a>Configuration space topology</h4>
+     <ul class='itemize1'>
+     <li class='itemize'>sphere and plance has same dimension (x,y and latitude,longitude) but
+     diffrent hape
+     </li>
+     <li class='itemize'>shape of the c-space is <span class='ecbx-1000'>topology</span>
+     </li>
+     <li class='itemize'><span class='ecbx-1000'>Topologically equivalent </span>- if two spaces can be deformed into each other
+     without any removal or addition
+     </li>
+     <li class='itemize'><span class='dsrom-10'>E</span> <sup><span class='cmr-7'>1</span></sup> - euclidean line
+     </li>
+     <li class='itemize'>c space can be expressed as <span class='ecbx-1000'>cartesian product </span>of two are more space of
+     lower dimension
+     </li>
+     <li class='itemize'>c- space of some common robots (<span class='cmmi-10'>X</span><sup><span class='cmmi-7'>n</span></sup> where n is the dimension)
+         <ul class='itemize2'>
+         <li class='itemize'>Rigid body in plane = <span class='dsrom-10'>ℝ</span><sup><span class='cmr-7'>2</span></sup> <span class='cmsy-10'>×</span><span class='dsrom-10'>S</span><sup><span class='cmr-7'>1</span></sup>
+         </li>
+         <li class='itemize'>PR robot arm = <span class='dsrom-10'>ℝ</span><sup><span class='cmr-7'>1</span></sup> <span class='cmsy-10'>×</span><span class='dsrom-10'>S</span><sup><span class='cmr-7'>1</span></sup>
+         </li>
+         <li class='itemize'>planar rigid body with PR arm =
+         <table class='align-star'>
+          <tr><td class='align-odd'>for arm</td>                    <td class='align-even'> <span class='cmr-10'>= </span><span class='dsrom-10'>S</span><sup><span class='cmr-7'>1</span></sup> <span class='cmsy-10'>×</span><span class='dsrom-10'>S</span><sup><span class='cmr-7'>1</span></sup> <span class='cmr-10'>= </span><span class='cmmi-10'>T</span><sup><span class='cmr-7'>2</span></sup></td>             <td class='align-odd'><span class='cmmi-10'>…</span>T = torus</td>          <td class='align-even'></td>          <td class='align-label'></td>          <td class='align-label'></td>          <td class='align-label'>
+          </td></tr><tr><td class='align-odd'>for mobile base</td>          <td class='align-even'> <span class='cmr-10'>= </span><span class='dsrom-10'>ℝ</span><sup><span class='cmr-7'>2</span></sup> <span class='cmsy-10'>×</span><span class='dsrom-10'>S</span><sup><span class='cmr-7'>1</span></sup></td>                      <td class='align-odd'></td>                               <td class='align-even'></td>             <td class='align-label'></td>             <td class='align-label'>
+             </td></tr><tr><td class='align-odd'> <span class='msam-10'>∴ </span><span class='cmmi-10'>c </span><span class='cmsy-10'>- </span><span class='cmmi-10'>space</span></td>            <td class='align-even'> <span class='cmr-10'>= </span><span class='dsrom-10'>ℝ</span><sup><span class='cmr-7'>2</span></sup> <span class='cmsy-10'>×</span><span class='dsrom-10'>S</span><sup><span class='cmr-7'>1</span></sup> <span class='cmsy-10'>×</span><span class='dsrom-10'>T</span><sup><span class='cmr-7'>2</span></sup></td>             <td class='align-odd'></td>                               <td class='align-even'></td>             <td class='align-label'></td>             <td class='align-label'>
+             </td></tr><tr><td class='align-odd'></td>                                     <td class='align-even'> <span class='cmr-10'>= </span><span class='dsrom-10'>ℝ</span><sup><span class='cmr-7'>2</span></sup> <span class='cmsy-10'>× </span><span class='cmmi-10'>T</span><sup><span class='cmr-7'>3</span></sup></td>                     <td class='align-odd'></td>                               <td class='align-even'></td>             <td class='align-label'></td>             <td class='align-label'>             </td></tr></table>
+                                                                  
+
+                                                                  
+         </li></ul>
+     </li></ul>
+<!-- l. 99 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead'><span class='titlemark'>2.3   </span> <a id='x1-60002.3'></a>Configure space Representation</h4>
+<!-- l. 100 --><p class='noindent'>To perform computations we need numerical represenstation
+</p>
+   <h5 class='subsubsectionHead'><span class='titlemark'>2.3.1   </span> <a id='x1-70002.3.1'></a>Explicit represenstation</h5>
+     <ul class='itemize1'>
+     <li class='itemize'>choice of n co-ordinates for to represent an n-dimensional space
+     </li>
+     <li class='itemize'>for sphere,longitude and latitude
+     </li>
+     <li class='itemize'>causes singularaties (at northpole,sudden shift in values)
+     </li>
+     <li class='itemize'>to avoid this use co-ordinate chart(split parts like atlas)</li></ul>
+<!-- l. 108 --><p class='noindent'>
+</p>
+   <h5 class='subsubsectionHead'><span class='titlemark'>2.3.2   </span> <a id='x1-80002.3.2'></a>Implicit represenstation</h5>
+     <ul class='itemize1'>
+     <li class='itemize'>represensting n n-dimensional space as if it is embedded in euclidean space
+     </li>
+     <li class='itemize'>disadvantage as has more variable to consider
+     </li>
+     <li class='itemize'>easy to define closed loops</li></ul>
+<!-- l. 114 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead'><span class='titlemark'>2.4   </span> <a id='x1-90002.4'></a>Configuration and velocity constrain</h4>
+<!-- l. 115 --><p class='noindent'>For a 4 bar linkage,the closed loop can be expressed by the following equations
+                                                                  
+
+                                                                  
+</p><table class='align-star'>
+<tr><td class='align-odd'><span class='cmmi-10'>L</span><sub><span class='cmr-7'>1</span></sub> <span class='cmr-10'>cos</span><span class='cmmi-10'>θ</span><sub><span class='cmr-7'>1</span></sub> <span class='cmr-10'>+ </span><span class='cmmi-10'>L</span><sub><span class='cmr-7'>2</span></sub> <span class='cmr-10'>cos(</span><span class='cmmi-10'>θ</span><sub><span class='cmr-7'>1</span></sub> <span class='cmr-10'>+ </span><span class='cmmi-10'>θ</span><sub><span class='cmr-7'>2</span></sub><span class='cmr-10'>) + </span><span class='cmmi-10'>… </span><span class='cmr-10'>+ </span><span class='cmmi-10'>L</span><sub><span class='cmr-7'>4</span></sub> <span class='cmr-10'>cos(</span><span class='cmmi-10'>θ</span><sub><span class='cmr-7'>1</span></sub> <span class='cmr-10'>+ </span><span class='cmmi-10'>… </span><span class='cmr-10'>+ </span><span class='cmmi-10'>θ</span><sub><span class='cmr-7'>4</span></sub><span class='cmr-10'>)</span></td><td class='align-even'> <span class='cmr-10'>= 0</span></td><td class='align-odd'></td>                             <td class='align-even'></td><td class='align-label'></td><td class='align-label'>
+</td></tr><tr><td class='align-odd'><span class='cmmi-10'>L</span><sub><span class='cmr-7'>1</span></sub> <span class='cmr-10'>sin</span><span class='cmmi-10'>θ</span><sub><span class='cmr-7'>1</span></sub> <span class='cmr-10'>+ </span><span class='cmmi-10'>L</span><sub><span class='cmr-7'>2</span></sub> <span class='cmr-10'>sin(</span><span class='cmmi-10'>θ</span><sub><span class='cmr-7'>1</span></sub> <span class='cmr-10'>+ </span><span class='cmmi-10'>θ</span><sub><span class='cmr-7'>2</span></sub><span class='cmr-10'>) + </span><span class='cmmi-10'>… </span><span class='cmr-10'>+ </span><span class='cmmi-10'>L</span><sub><span class='cmr-7'>4</span></sub> <span class='cmr-10'>sin(</span><span class='cmmi-10'>θ</span><sub><span class='cmr-7'>1</span></sub> <span class='cmr-10'>+ </span><span class='cmmi-10'>… </span><span class='cmr-10'>+ </span><span class='cmmi-10'>θ</span><sub><span class='cmr-7'>4</span></sub><span class='cmr-10'>)</span></td> <td class='align-even'> <span class='cmr-10'>= 0</span></td><td class='align-odd'> <span class='msam-10'>∵</span> sum of all vectors in loop is zero</td><td class='align-even'></td><td class='align-label'></td><td class='align-label'></td><td class='align-label'>
+</td></tr><tr><td class='align-odd'><span class='cmmi-10'>θ</span><sub><span class='cmr-7'>1</span></sub> <span class='cmr-10'>+ </span><span class='cmmi-10'>θ</span><sub><span class='cmr-7'>2</span></sub> <span class='cmr-10'>+ </span><span class='cmmi-10'>θ</span><sub><span class='cmr-7'>3</span></sub> <span class='cmr-10'>+ </span><span class='cmmi-10'>θ</span><sub><span class='cmr-7'>4</span></sub> <span class='cmr-10'>+ 2</span><span class='cmmi-10'>π</span></td>                         <td class='align-even'> <span class='cmr-10'>= 0</span></td><td class='align-odd'> <span class='msam-10'>∵</span> sum of all angles is <span class='cmr-10'>2</span><span class='cmmi-10'>π</span></td>        <td class='align-even'></td><td class='align-label'></td><td class='align-label'></td><td class='align-label'></td></tr></table>
+<!-- l. 121 --><p class='indent'>   These equations are called <span class='ecbx-1000'>loop closure equations</span>.For general robots c-space
+can be implicitly represented by column vector <span class='cmmi-10'>θ </span><span class='cmr-10'>= </span><img alt='[         ]
+ θ1  ... θn' align='middle' class='left' src='notes0x.png' /><sup><span class='cmmi-7'>T</span></sup> <span class='cmsy-10'>∈</span><span class='dsrom-10'>ℝ</span><sup><span class='cmmi-7'>n</span></sup>
+</p>
+   <table class='equation'><tr><td><a id='x1-9001r1'></a>
+   <center class='math-display'>
+<img alt='      ⌊               ⌋
+      | g1(θ1,...,.thetan)|
+g(θ) = ⌈       ..      ⌉ = 0
+          k(θ1,...,θk)
+' class='math-display' src='notes1x.png' /></center></td><td class='equation-label'>(1)</td></tr></table>
+<!-- l. 128 --><p class='nopar'>
+By diffrentiating the above equation <span class='footnote-mark'><a href='notes2.html#fn1x0'><sup class='textsuperscript'>1</sup></a></span><a id='x1-9002f1'></a> 
+</p><figure class='figure'> 
+
+                                                                  
+
+                                                                  
+<a id='x1-9003r4'></a>
+                                                                  
+
+                                                                  
+<!-- l. 132 --><p class='noindent'><img src='equationofclosedloop.png' height='276' alt='PIC' width='276' />
+</p>
+<figcaption class='caption'><span class='id'>Figuur 4:</span><span class='content'></span></figcaption><!-- tex4ht:label?: x1-9003r4  -->
+                                                                  
+
+                                                                  
+   </figure>
+<!-- l. 136 --><p class='indent'>   this can be expressed as matrix multiplying a column vector </p><figure class='figure'> 
+
+                                                                  
+
+                                                                  
+<a id='x1-9004r5'></a>
+                                                                  
+
+                                                                  
+<!-- l. 139 --><p class='noindent'><img src='equationofclosedloopasmatrix.png' height='276' alt='PIC' width='276' />
+</p>
+<figcaption class='caption'><span class='id'>Figuur 5:</span><span class='content'></span></figcaption><!-- tex4ht:label?: x1-9004r5  -->
+                                                                  
+
+                                                                  
+   </figure>
     
 </body> 
 </html>
