@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       d452e38f-b5da-464e-8960-012d52629ed4
+:END:
+#+title: Volume group
+** create volume of 8 mb
+#+begin_src shell
+vgcreate -s 8m vg /dev/vda  # 8m = physical extent
+#+end_src
+** extend a physical volume
+#+begin_src shell
+vgextend vg /dev/vdb
+#+end_src
+** to remove a physical volume
+#+begin_src shell
+vgreduce vg /dev/vdb
+#+end_src
+** remove existing volume group
+#+begin_src shell
+vgremove vg
+#+end_src
+** list volume groups
+#+begin_src shell
+vgs
+#+end_src

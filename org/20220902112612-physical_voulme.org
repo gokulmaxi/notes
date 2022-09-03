@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       3797cf60-89fa-4d7e-9e64-84f739a9e926
+:END:
+#+title: Physical_Volume
+
+** create physical volume
+#+begin_src shell
+pvcreate /dev/vda  # vda - refers to virtutal disk
+#+end_src
+** remove physical volume
+#+begin_src shell
+pvremove /dev/vda
+#+end_src
+** list physical volume
+#+begin_src shell
+pvs
+#+end_src

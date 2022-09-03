@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       d7a01948-0a80-46f3-a59e-47592beccab0
+:END:
+#+title: Linux
+Linux is a family of open-source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds.

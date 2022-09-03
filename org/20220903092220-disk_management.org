@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       39878b12-f3ca-4313-846b-f516db96da05
+:END:
+#+title: Disk Management
+
+** [[id:7a7c7c20-1ba7-452c-9450-c9725a46a857][LVM]]
+** Mounting
+*** Temporary mount - use [[id:58a57ce0-2ac1-42f5-bcd6-3113c25646e1][mount]]
+*** Permemnant mount - add file [[id:260aacb2-3829-484c-bfba-bb7beb3d4d63][fstab]]
+** [[id:17793f2d-c71e-47b9-a6dd-4ab83f224b87][Format disks]]

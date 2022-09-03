@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       3fd50fde-7c42-4ed2-a434-f457909e45cf
+:END:
+#+title: chmod
+[[id:d7a01948-0a80-46f3-a59e-47592beccab0][Linux]] command used to modify the permission of file
+** who
+*** u - users
+*** g - [[id:6699d709-50a4-418a-82e1-290f4278fc98][groups]]
+*** o - others
+*** a - all
+** what
+*** - - remove the permission
+*** + - grants the permission
+*** = wipes and sets the given permission
+** which
+*** r - read
+*** w - write
+*** x - execute
+* Examples
+#+begin_src shell
+chmod u=rw,og=r new_file.txt
+#+end_src

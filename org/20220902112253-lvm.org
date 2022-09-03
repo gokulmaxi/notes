@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       7a7c7c20-1ba7-452c-9450-c9725a46a857
+:END:
+#+title: LVM
+* LVM = Logical Volume Manager
+Relies on
+** [[id:3797cf60-89fa-4d7e-9e64-84f739a9e926][Physical Volume]] - PV
+** [[id:d452e38f-b5da-464e-8960-012d52629ed4][Volume group]] - VG
+** [[id:9f694638-ca45-40a7-acd4-b3a949610d65][Logical Volume]] - LV

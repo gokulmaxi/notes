@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       17793f2d-c71e-47b9-a6dd-4ab83f224b87
+:END:
+#+title: Format disks
+** to format a lvm to an file system
+use mkfs.(file system)

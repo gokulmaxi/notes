@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       9f694638-ca45-40a7-acd4-b3a949610d65
+:END:
+#+title: Logical Volume
+** create logical volume
+#+begin_src shell
+lvcreate --size 1G --name lv_vol vg
+#+end_src
+*** To specify size specifically
+-L 100M / --size 100m
+*** to specify size with percentage
+-l 60%VG / --extent 60%VG
+** remove logical volume
+#+begin_src shell
+lvremove /dev/vg/lv_vol
+#+end_src
+** to get list of logical volume
+#+begin_src shell
+
+lvs
+#+end_src

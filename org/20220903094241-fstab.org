@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       260aacb2-3829-484c-bfba-bb7beb3d4d63
+:END:
+#+title: fstab
+** Find the UUID
+#+begin_src shell
+sudo blkid /dev/sda2
+#+end_src
+** add the partition to fstab
+UUID=14ec56b9-9d53-49e4-992a-45a7e5a64dca /wolf ext4 defaults 0 0
+ #+begin_src shell
+# add the uuid file at end of fstab
+vi /etc/fstab
+# mount all partition listed in fstab
+sudo mount -a
+ #+end_src

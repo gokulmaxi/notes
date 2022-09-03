@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       58a57ce0-2ac1-42f5-bcd6-3113c25646e1
+:END:
+#+title: mount
+mount is the command used to to mount a file system in [[id:d7a01948-0a80-46f3-a59e-47592beccab0][Linux]]  under root directory
+#+begin_src shell
+# mount -t type device directory
+mount /dev/dba_storage/volume1 /mnt/dba_storage
+#+end_src

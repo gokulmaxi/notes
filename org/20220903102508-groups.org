@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       6699d709-50a4-418a-82e1-290f4278fc98
+:END:
+#+title: groups
+*** In [[id:d7a01948-0a80-46f3-a59e-47592beccab0][Linux]], groups are used to organize and administer user accounts.
+*** The primary purpose of groups is to define a set of privileges such as reading,writing, or executing permission for a given resource that can be shared among the users within the group.
+** add a new group
+#+begin_src shell
+groupadd mygroup
+#+end_src
+** get the group id
+#+begin_src shell
+getent group docker
+#+end_src
+
+#+RESULTS:
+: docker:x:978:gokul
+
+
+** list all groups
+#+begin_src shell
+cat /etc/group
+#+end_src
+** list all groups current user is in
+#+begin_src shell
+groups
+#+end_src
+
+#+RESULTS:
+: gokul wheel dialout input pkg-build docker libvirt

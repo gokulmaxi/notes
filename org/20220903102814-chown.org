@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       d9586f38-dd92-4efb-9123-c980a6d6e4b9
+:END:
+#+title: chown
+
+**  [[id:d7a01948-0a80-46f3-a59e-47592beccab0][Linux]] command to changes the ownership to a specif user or group
+#+begin_src shell
+chown owner file
+#+end_src
+
+*** to change ownership to a group
+#+begin_src shell
+chown :group file
+#+end_src
